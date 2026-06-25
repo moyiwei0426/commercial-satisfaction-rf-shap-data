@@ -17,15 +17,10 @@ This folder contains the anonymized data and code required to reproduce the main
 - `code/prepare_public_data_release.py`: author-side script used to generate this release package from non-public source files.
 - Other scripts are author-side figure-generation scripts retained for transparency. Some of them require non-public raw inputs and are not expected to run from the released data alone.
 
-To run the public random-forest reproduction script, install the dependencies listed in `requirements.txt`.
-
-## Not released
-
-The raw commercial POI and review records are not included. Merchant names, addresses, contact information, user or platform identifiers, review texts, raw URLs, and exact point-level commercial locations were removed from the public package. Point-level commercial POI analysis data are also excluded to reduce re-identification risk.
 
 ## Spatial aggregation
 
-Commercial records were matched to OSM street segments within a maximum distance of 200 m. For each commercial category and street segment, satisfaction, perception variables, and SHAP values were averaged. Low satisfaction was defined as the bottom quartile of street-segment mean satisfaction within each commercial category. The dominant driver is the perception variable with the largest mean absolute SHAP value; the negative driver is the perception variable with the most negative mean signed SHAP value.
+Commercial records were matched to OSM street segments. For each commercial category and street segment, satisfaction, perception variables, and SHAP values were averaged. Low satisfaction was defined as the bottom quartile of street-segment mean satisfaction within each commercial category. The dominant driver is the perception variable with the largest mean absolute SHAP value; the negative driver is the perception variable with the most negative mean signed SHAP value.
 
 ## Commercial categories
 
@@ -43,6 +38,4 @@ Commercial records were matched to OSM street segments within a maximum distance
 - Depression
 - Boring
 
-## Suggested Data Availability Statement
 
-The anonymized data and code supporting the findings of this study are available at [repository link]. The released dataset includes random forest model input data without location or merchant identifiers, street-segment-level commercial satisfaction indicators, aggregated street-view perception measures, and street-segment-level SHAP summary results. To protect privacy and comply with data-use restrictions, raw merchant names, addresses, contact information, review texts, platform identifiers, exact point-level commercial locations, and point-level commercial POI analysis data are not publicly released.
