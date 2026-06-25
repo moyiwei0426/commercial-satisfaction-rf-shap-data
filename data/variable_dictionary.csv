@@ -1,0 +1,38 @@
+﻿field,description
+category,"Commercial category: CAT, ISS, LEX, or RTL"
+satisfaction_score,Commercial satisfaction score used as the dependent variable
+mean_satisfaction,Street-segment-level mean commercial satisfaction
+n_poi,Number of matched commercial records aggregated to the street segment
+segment_id,Anonymized street segment identifier assigned for this public release
+geometry_wkt_epsg32649,"Street segment geometry in WKT format, projected CRS EPSG:32649"
+centroid_x_epsg32649,Street segment centroid X coordinate in EPSG:32649
+centroid_y_epsg32649,Street segment centroid Y coordinate in EPSG:32649
+low_satisfaction_flag,"1 if mean_satisfaction is in the bottom quartile within the category, otherwise 0"
+low_satisfaction_threshold,Category-specific bottom-quartile threshold for low satisfaction
+dominant_shap_driver,Variable with the largest mean absolute SHAP value on the street segment
+negative_shap_driver,Variable with the most negative mean signed SHAP value on the street segment
+negative_shap_value,Mean signed SHAP value of the negative_shap_driver
+Aesthetics,Street-view aesthetics perception score
+mean_Aesthetics,Street-segment-level mean Aesthetics perception score
+mean_shap_Aesthetics,Street-segment-level mean signed SHAP value for Aesthetics
+mean_abs_shap_Aesthetics,Street-segment-level mean absolute SHAP value for Aesthetics
+Safety,Street-view safety perception score
+mean_Safety,Street-segment-level mean Safety perception score
+mean_shap_Safety,Street-segment-level mean signed SHAP value for Safety
+mean_abs_shap_Safety,Street-segment-level mean absolute SHAP value for Safety
+Vibrancy,Street-view vibrancy perception score
+mean_Vibrancy,Street-segment-level mean Vibrancy perception score
+mean_shap_Vibrancy,Street-segment-level mean signed SHAP value for Vibrancy
+mean_abs_shap_Vibrancy,Street-segment-level mean absolute SHAP value for Vibrancy
+Wealth,Street-view wealth perception score
+mean_Wealth,Street-segment-level mean Wealth perception score
+mean_shap_Wealth,Street-segment-level mean signed SHAP value for Wealth
+mean_abs_shap_Wealth,Street-segment-level mean absolute SHAP value for Wealth
+Depression,Street-view depression perception score
+mean_Depression,Street-segment-level mean Depression perception score
+mean_shap_Depression,Street-segment-level mean signed SHAP value for Depression
+mean_abs_shap_Depression,Street-segment-level mean absolute SHAP value for Depression
+Boring,Street-view boring perception score
+mean_Boring,Street-segment-level mean Boring perception score
+mean_shap_Boring,Street-segment-level mean signed SHAP value for Boring
+mean_abs_shap_Boring,Street-segment-level mean absolute SHAP value for Boring

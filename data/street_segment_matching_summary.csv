@@ -1,0 +1,5 @@
+﻿category,input_poi_records,matched_poi_records,matched_street_segments,matching_distance_m,low_satisfaction_threshold
+CAT,6000,5994,1013,200.0,3.542857142857143
+ISS,6000,6000,1265,200.0,3.5
+LEX,6000,6000,1055,200.0,3.7
+RTL,6000,6000,519,200.0,3.2000000000000006
